@@ -93,8 +93,9 @@ def write_quotes_to_csv(output_csv_path: str, quotes: list[Quote]) -> None:
             writer.writerow([
                 quote.text,
                 quote.author,
-                ';'.join(quote.tags)
+                ";".join(quote.tags)
             ])
+
 
 def write_authors_to_csv(
         output_csv_path: str,
