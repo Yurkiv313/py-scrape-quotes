@@ -19,7 +19,7 @@ class Quote:
 class Author:
     name: str
     birth_date: str
-    birth_location: str
+    location: str
     description: str
 
 
@@ -49,7 +49,7 @@ def parse_single_author(author_relative_url: str) -> Author:
     return Author(
         name=name,
         birth_date=birth_date,
-        birth_location=birth_location,
+        location=birth_location,
         description=description
     )
 
